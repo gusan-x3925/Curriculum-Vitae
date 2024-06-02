@@ -16,9 +16,9 @@ jobs:
         run: sudo apt-get install -y texlive-full pandoc ruby rake
 
       - name: convert markdown to pdf
-        run: pandoc README.md -o resume.pdf --pdf-engine=lualatex -V documentclass=ltjsarticle -V luatexjapresetoptions=morisawa
+        run: pandoc README.md -o resume.pdf -V documentclass=ltjarticle --latex-engine=lualatex
 
-      - name: upload artifacts
+      - name: upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: my-resume
