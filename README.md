@@ -3,7 +3,7 @@
 ## 基本情報
 
 - **氏名:** 坂口 裕晃
-- **X:** [@gusan_x229](https://x.com/gusan_x229/)
+- **X:** [＠gusan_x229](https://x.com/gusan_x229)
 - **LinkedIn:** [linkedin.com/in/s-hiroaki](https://www.linkedin.com/in/s-hiroaki/)
 
 ## 概要
@@ -34,8 +34,8 @@
 - オンコール対応
 - 自社LTの登壇
 - [自社ブログ](https://zenn.dev/coconala)の執筆
-    - [ココナラのCDN構成についてご紹介](https://zenn.dev/coconala/articles/905b968520744e)
-    - [AWSのログイン方法を切り替えた話](https://zenn.dev/coconala/articles/c89a8130ce4f40)
+  - [ココナラのCDN構成についてご紹介](https://zenn.dev/coconala/articles/905b968520744e)
+  - [AWSのログイン方法を切り替えた話](https://zenn.dev/coconala/articles/c89a8130ce4f40)
 
 #### 開発環境
 
