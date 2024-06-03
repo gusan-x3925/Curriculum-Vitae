@@ -31,7 +31,7 @@ jobs:
       - name: convert markdown to pdf
         uses: docker://pandoc/latex:3.1.13.0
         with:
-          args: README.md --output=resume.pdf --pdf-engine=lualatex -V documentclass=ltjsarticle -V luatexjapresetoptions=morisawa
+          args: README.md --output=resume.pdf --pdf-engine=lualatex -V luatexjapresetoptions=morisawa
 
       - name: upload artifacts
         uses: actions/upload-artifact@v4
