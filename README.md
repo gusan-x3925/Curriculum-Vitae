@@ -3,7 +3,7 @@
 ## 基本情報
 
 - **氏名:** 坂口 裕晃
-- **X:** [＠gusan_x229](https://x.com/gusan_x229)
+- **X:** [＠gusan_x3925](https://x.com/gusan_x3925)
 - **LinkedIn:** [linkedin.com/in/s-hiroaki](https://www.linkedin.com/in/s-hiroaki/)
 
 ## 概要
