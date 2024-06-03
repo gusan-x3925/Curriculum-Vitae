@@ -20,6 +20,7 @@ jobs:
         uses: DavidAnson/markdownlint-cli2-action@v16.0.0
         with:
           fix: true
+          config: 'config/markdownlint-config.jsonc'
           globs: |
             README.md
 
