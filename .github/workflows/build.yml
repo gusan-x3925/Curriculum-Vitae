@@ -12,20 +12,26 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: install pandoc
-        run: sudo apt-get install -y texlive-full pandoc ruby rake
+#      - name: install pandoc
+#        run: sudo apt-get install -y texlive-full pandoc ruby rake
 
       # Doc: https://github.com/marketplace/actions/markdownlint-cli2-action
       - name: markdownlint-cli2-action
         uses: DavidAnson/markdownlint-cli2-action@v16.0.0
         with:
           fix: true
-          config: 'config/markdownlint-config.jsonc'
+          config: 'config/.markdownlint.json'
           globs: |
             README.md
 
+#      - name: convert markdown to pdf
+#        run: pandoc README.md -o resume.pdf --pdf-engine=lualatex -V documentclass=ltjsarticle -V luatexjapresetoptions=morisawa
+      # Doc: https://github.com/pandoc/pandoc-action-example
+      # Container Tag: https://hub.docker.com/r/pandoc/extra/tags
       - name: convert markdown to pdf
-        run: pandoc README.md -o resume.pdf --pdf-engine=lualatex -V documentclass=ltjsarticle -V luatexjapresetoptions=morisawa
+        uses: docker://pandoc/extra:3.2.0.0
+        with:
+          args: README.md -o resume.pdf --pdf-engine=lualatex -V documentclass=ltjsarticle -V luatexjapresetoptions=morisawa
 
       - name: upload artifacts
         uses: actions/upload-artifact@v4
