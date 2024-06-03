@@ -1,8 +1,8 @@
 # 職務経歴書
 
 ## 基本情報
-- **氏名:** 坂口 裕晃  
-- **X:** [@gusan_x229](https://x.com/gusan_x229)  
+- **氏名:** 坂口 裕晃
+- **X:** [@gusan_x229](https://x.com/gusan_x229)
 - **LinkedIn:** [linkedin.com/in/s-hiroaki](https://www.linkedin.com/in/s-hiroaki/)
 
 
@@ -16,7 +16,8 @@
 ## 職務経歴 (現職)
 ### 株式会社ココナラ (2022年2月 ~ 現在)
 インフラSREチームに所属し、個人のスキルを売り買いできるスキルマーケット「ココナラ」のインフラの設計・構築・運用を行う。  
-運用のかたわら、EOL対応や小規模な技術負債の解消などの改善活動にも取り組む。
+運用のかたわら、EOL対応や小規模な技術負債の解消などの改善活動にも取り組む。  
+
 #### 業務詳細  
 - AWSで動いている各種システムのモニタリング、エラー調査
 - AWS CloudFrontからAkamai CDNへの移行
@@ -32,6 +33,7 @@
 - [自社ブログ](https://zenn.dev/coconala)の執筆
   - [ココナラのCDN構成についてご紹介](https://zenn.dev/coconala/articles/905b968520744e)
   - [AWSのログイン方法を切り替えた話](https://zenn.dev/coconala/articles/c89a8130ce4f40)
+
 #### 開発環境
 - **OS:** Ubuntu 18.04, Amazon Linux 2
 - **AWS:** EC2, ECS, CloudFront, ElastiCache for Redis, Aurora MySQL, S3, IAM Identity Center
@@ -53,6 +55,7 @@ SES事業会社所属のインフラエンジニアとして客先に常駐し�
 - AI学習基盤のオンプレサーバーへOSやGPUドライバーをインストールし、Kubernetes上のPodからGPUを使用できる環境の構築
 - 社内開発基盤にて市販のGPUを利用したAI学習検証環境をKVMとDockerを用いて構築
 - 社内開発基盤向けに、認証基盤・プライベートGit・プライベートDockerリポジトリの構築
+
 ##### 開発環境 
 - **OS:** Ubuntu 20.04
 - **開発基盤:** Cockpit (KVM), Kubernetes, Portainer
