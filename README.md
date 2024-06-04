@@ -3,6 +3,10 @@
 ## 基本情報
 
 - **氏名:** 坂口 裕晃
+- **生年月日:** 1987/12/14
+
+### 各種アカウント
+
 - **X:** [＠gusan_x3925](https://x.com/gusan_x3925)
 - **LinkedIn:** [linkedin.com/in/s-hiroaki](https://www.linkedin.com/in/s-hiroaki/)
 
@@ -39,14 +43,16 @@
 
 #### 開発環境
 
-- **OS:** Ubuntu 18.04, Amazon Linux 2
-- **AWS:** EC2, ECS, CloudFront, ElastiCache for Redis, Aurora MySQL, S3, IAM Identity Center
-- **プロビジョニング:** Terraform, Docker, Ansible, Capistrano, CircleCI
-- **ミドルウェア:** Nginx, Fluentd
-- **SaaS:** Akamai CDN, Elastic Cloud
-- **言語:** Python3, シェルスクリプト, Ruby, PHP
-- **監視:** Datadog, CloudWatch
-- **その他:** GitHub
+| 種別 | 技術名 |
+| :-- | :-- |
+| OS | Ubuntu 18.04, Amazon Linux 2 |
+| AWS | EC2, ECS, CloudFront, ElastiCache for Redis, Aurora MySQL, S3, IAM Identity Center |
+| プロビジョニング | Terraform, Docker, Ansible, Capistrano, CircleCI |
+| ミドルウェア | Nginx, Fluentd |
+| SaaS | Akamai CDN, Elastic Cloud |
+| 言語 | Python3, シェルスクリプト, Ruby, PHP |
+| 監視 | Datadog, CloudWatch |
+| その他 | GitHub |
 
 ## 職務経歴 (過去)
 
@@ -65,12 +71,14 @@ SES事業会社所属のインフラエンジニアとして客先に常駐し�
 
 ##### 開発環境
 
-- **OS:** Ubuntu 20.04
-- **開発基盤:** Cockpit (KVM), Kubernetes, Portainer
-- **プロビジョニング:** Ansible, AWX, Docker
-- **ミドルウェア:** Nginx Proxy Manager, Portus, Rook(Ceph)
-- **言語:** Python3, React
-- **その他:** GitHub, Gitea, NVIDIA GPU
+| 種別 | 技術名 |
+| :-- | :-- |
+| OS | Ubuntu 20.04 |
+| 開発基盤 | Cockpit (KVM), Kubernetes, Portainer |
+| プロビジョニング | Ansible, AWX, Docker |
+| ミドルウェア | Nginx Proxy Manager, Portus, Rook(Ceph) |
+| 言語 | Python3, React |
+| その他 | GitHub, Gitea, NVIDIA GPU |
 
 #### ビッグデータ解析サービスの運用・保守 プロジェクト (2021年4月 ~ 2021年7月)
 
@@ -82,9 +90,11 @@ SES事業会社所属のインフラエンジニアとして客先に常駐し�
 
 ##### 開発環境
 
-- **AWS:** Step Functions, Lambda, Amazon EMR, API Gateway
-- **プロビジョニング:** CloudFormation
-- **その他:** GitHub
+| 種別 | 技術名 |
+| :-- | :-- |
+| AWS | Step Functions, Lambda, Amazon EMR, API Gateway |
+| プロビジョニング | CloudFormation |
+| その他 | GitHub |
 
 #### S/4 HANA導入にともなうインフラ構築 プロジェクト (2020年9月 ~ 2021年3月)
 
@@ -95,9 +105,11 @@ SES事業会社所属のインフラエンジニアとして客先に常駐し�
 
 ##### 開発環境
 
-- **OS:** SUSE
-- **AWS:** EC2, Lambda, CloudShell, WorkSpaces
-- **言語:** Python 3.8, シェルスクリプト
+| 種別 | 技術名 |
+| :-- | :-- |
+| OS | SUSE |
+| AWS | EC2, Lambda, CloudShell, WorkSpaces |
+| 言語 | Python 3.8, シェルスクリプト |
 
 #### サービス基盤の運用改善 プロジェクト (2019年1月 ~ 2020年8月)
 
@@ -110,12 +122,14 @@ SES事業会社所属のインフラエンジニアとして客先に常駐し�
 
 ##### 開発環境
 
-- **OS:** CentOS 7, CentOS 6
-- **基盤:** VMware, ニフクラ
-- **プロビジョニング:** Ansible 2.8
-- **言語:** Python 3.6, Python 2.7
-- **監視:** Zabbix 2.0, Zabbix 4.0
-- **その他:** GitLab, Docker for Windows
+| 種別 | 技術名 |
+| :-- | :-- |
+| OS | CentOS 7, CentOS 6 |
+| 開発基盤 | VMware, ニフクラ |
+| プロビジョニング | Ansible 2.8 |
+| 言語 | Python 3.6, Python 2.7 |
+| 監視 | Zabbix 2.0, Zabbix 4.0 |
+| その他 | GitLab, Docker for Windows |
 
 #### サーバー更改に伴うジョブフローの移行ならびにスクリプト改修 プロジェクト (2018年6月 ~ 2018年12月)
 
@@ -126,9 +140,11 @@ SES事業会社所属のインフラエンジニアとして客先に常駐し�
 
 ##### 開発環境
 
-- **OS:** Windows Server 2008 R2, Windows Server 2012 R2
-- **ミドルウェア:** Systemwalker Operation Manager, HULFT 7, HULFT 8
-- **言語:** VBS
+| 種別 | 技術名 |
+| :-- | :-- |
+| OS | Windows Server 2008 R2, Windows Server 2012 R2 |
+| ミドルウェア | Systemwalker Operation Manager, HULFT 7, HULFT 8 |
+| 言語 | VBS |
 
 ### 株式会社I2C (2015年9月 ~ 2018年5月)
 
@@ -148,10 +164,12 @@ SES事業会社所属のインフラエンジニアとして客先に常駐し�
 
 ##### 開発環境
 
-- **OS:** Windows Server 2012 R2, Windows Server 2016
-- **ミドルウェア:** Active Directory, SharePoint Server 2013, Exchange Server 2013, KMS
-- **SaaS:** SharePoint Online, Exchange Online
-- **言語:** Windows PowerShell
+| 種別 | 技術名 |
+| :-- | :-- |
+| OS | Windows Server 2012 R2, Windows Server 2016 |
+| ミドルウェア | Active Directory, SharePoint Server 2013, Exchange Server 2013, KMS |
+| SaaS | SharePoint Online, Exchange Online |
+| 言語 | Windows PowerShell |
 
 #### 店頭業務システム運用監視 プロジェクト (2015年9月 ~ 2016年2月)
 
@@ -163,10 +181,12 @@ SES事業会社所属のインフラエンジニアとして客先に常駐し�
 
 ##### 開発環境
 
-- **OS:** Windows Server 2012 R2
-- **基盤:** Microsoft Azure
-- **監視:** Hinemos
-- **言語:** Windows PowerShell
+| 種別 | 技術名 |
+| :-- | :-- |
+| OS | Windows Server 2012 R2 |
+| 開発基盤 | Microsoft Azure |
+| 監視 | Hinemos |
+| 言語 | Windows PowerShell |
 
 ### 株式会社マルアイ (2015年9月 ~ 2018年5月)
 
