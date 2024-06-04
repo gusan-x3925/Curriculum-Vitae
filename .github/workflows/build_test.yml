@@ -1,8 +1,6 @@
 name: Convert Markdown to PDF
 
 on:
-  push:
-    branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
 
