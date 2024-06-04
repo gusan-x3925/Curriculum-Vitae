@@ -1,8 +1,6 @@
 name: Convert Markdown to PDF and release
 
 on:
-  push:
-    branches: [ "main" ]
   pull_request:
     types: [closed]
     branches:
@@ -37,7 +35,9 @@ jobs:
       - name: set current datetime as env variable
         env:
           TZ: 'Asia/Tokyo'
-        run: echo "CURRENT_DATETIME=$(date +'%Y%m%d')" >> $GITHUB_ENV
+        run: |
+          echo "CURRENT_DATETIME=$(date +'%Y%m%d')" >> $GITHUB_ENV
+          echo "CURRENT_DATETIME2=$(date +'%Y/%m/%d')" >> $GITHUB_ENV
 
       - name: create release
         id: create_release
@@ -45,9 +45,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: "update_${{ env.CURRENT_DATETIME }}"
-          release_name: "Release ${{ env.CURRENT_DATETIME }}"
-          body: ${{ github.event.pull_request.body }}
+          tag_name: "update_$CURRENT_DATETIME"
+          release_name: "Release $CURRENT_DATETIME"
+          body: "$CURRENT_DATETIME2 時点の職務経歴書"
           draft: false
           prerelease: false
 
