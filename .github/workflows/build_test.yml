@@ -3,6 +3,9 @@ name: Test to convert Markdown to PDF
 on:
   pull_request:
     branches: [ "main" ]
+  push:
+    paths:
+      - 'README.md'
 
 jobs:
   build:

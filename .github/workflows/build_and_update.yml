@@ -5,6 +5,9 @@ on:
     types: [closed]
     branches:
       - main
+  push:
+    paths:
+      - 'README.md'
 
 jobs:
   build:
