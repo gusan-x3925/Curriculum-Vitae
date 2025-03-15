@@ -34,7 +34,7 @@ jobs:
             --pdf-engine=lualatex 
             -V documentclass=ltjsarticle 
             -V luatexjapresetoptions=yu-win10
-            -V indent=true
+#            -V indent=true
 #           -V luatexjapresetoptions=morisawa
 
       - name: upload artifacts
