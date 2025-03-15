@@ -24,11 +24,20 @@ jobs:
           globs: |
             README.md
 
-      - name: install pandoc
+      - name: install pandoc & font
         run: sudo apt-get install -y texlive-full pandoc ruby rake
           
       - name: convert markdown to pdf
-        run: pandoc README.md -o resume.pdf --pdf-engine=lualatex -V documentclass=ltjsarticle -V luatexjapresetoptions=morisawa
+        run: >
+          pandoc README.md
+            -f markdown
+            -o resume.pdf 
+            --pdf-engine=lualatex 
+            -V fontsize=12pt
+            -V documentclass=ltjsarticle 
+            -V luatexjapresetoptions=yu-win10
+            -V indent=true
+#           -V luatexjapresetoptions=morisawa
 
       - name: upload artifacts
         uses: actions/upload-artifact@4cec3d8aa04e39d1a68397de0c4cd6fb9dce8ec1 # v4.6.1
