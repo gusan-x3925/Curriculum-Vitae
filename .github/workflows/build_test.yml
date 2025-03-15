@@ -13,11 +13,11 @@ jobs:
     if: github.event.pull_request.merged == false
     steps:
       - name: git checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
 
       # Doc: https://github.com/marketplace/actions/markdownlint-cli2-action
       - name: markdown linter
-        uses: DavidAnson/markdownlint-cli2-action@v16.0.0
+        uses: DavidAnson/markdownlint-cli2-action@05f32210e84442804257b2a6f20b273450ec8265 # v0.17.2
         with:
           fix: true
           config: 'config/.markdownlint.json'
@@ -31,7 +31,7 @@ jobs:
         run: pandoc README.md -o resume.pdf --pdf-engine=lualatex -V documentclass=ltjsarticle -V luatexjapresetoptions=morisawa
 
       - name: upload artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@4cec3d8aa04e39d1a68397de0c4cd6fb9dce8ec1 # v4.6.1
         with:
           name: my-resume
           path: resume.pdf
