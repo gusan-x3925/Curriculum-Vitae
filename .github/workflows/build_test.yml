@@ -32,7 +32,6 @@ jobs:
           pandoc README.md
             -o resume.pdf 
             --pdf-engine=lualatex 
-            -V fontsize=12pt
             -V documentclass=ltjsarticle 
             -V luatexjapresetoptions=yu-win10
             -V indent=true
