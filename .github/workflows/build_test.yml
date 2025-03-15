@@ -30,7 +30,6 @@ jobs:
       - name: convert markdown to pdf
         run: >
           pandoc README.md
-            -f markdown
             -o resume.pdf 
             --pdf-engine=lualatex 
             -V fontsize=12pt
