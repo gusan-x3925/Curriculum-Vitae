@@ -28,13 +28,7 @@ jobs:
         run: sudo apt-get install -y pandoc texlive-luatex texlive-lang-japanese texlive-latex-extra texlive-fonts-recommended 
                   
       - name: convert markdown to pdf
-        run: >
-          pandoc README.md
-            -o resume.pdf 
-            --pdf-engine=lualatex 
-            -V documentclass=ltjsarticle 
-            -V luatexjapresetoptions=ipaex
-            -V indent=true
+        run: pandoc README.md -o resume.pdf --pdf-engine=lualatex -V documentclass=ltjsarticle -V luatexjapresetoptions=ipaex -V indent=true
 
       - name: upload artifacts
         uses: actions/upload-artifact@4cec3d8aa04e39d1a68397de0c4cd6fb9dce8ec1 # v4.6.1
