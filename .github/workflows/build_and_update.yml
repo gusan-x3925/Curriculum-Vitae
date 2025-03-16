@@ -27,10 +27,10 @@ jobs:
             README.md
 
       - name: install pandoc
-        run: sudo apt-get install -y texlive-full pandoc ruby rake
+        run: sudo apt-get install -y pandoc texlive-luatex texlive-lang-japanese texlive-latex-extra texlive-fonts-recommended 
           
       - name: convert markdown to pdf
-        run: pandoc README.md -o resume.pdf --pdf-engine=lualatex -V documentclass=ltjsarticle -V luatexjapresetoptions=morisawa
+        run: pandoc README.md -o resume.pdf --pdf-engine=lualatex -V documentclass=ltjsarticle -V luatexjapresetoptions=morisawa -V indent=true
 
       - name: resume zip archive
         run: zip resume.zip resume.pdf
