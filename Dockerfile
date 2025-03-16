@@ -13,6 +13,6 @@ RUN pandoc README.md \
     -o resume.pdf \
     --pdf-engine=lualatex \
     -V documentclass=ltjsarticle \
-    -V luatexjapresetoptions=ipaex \
+    -V luatexjapresetoptions=morisawa \
     -V indent=true
 

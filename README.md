@@ -3,8 +3,6 @@
 ## 基本情報
 
 - **氏名:** 坂口 裕晃
-- **X:** [＠gusan_x3925](https://x.com/gusan_x3925)
-- **LinkedIn:** [linkedin.com/in/s-hiroaki](https://www.linkedin.com/in/s-hiroaki/)
 
 ## 概要
 
@@ -37,11 +35,17 @@
   - [ココナラのCDN構成についてご紹介](https://zenn.dev/coconala/articles/905b968520744e)
   - [AWSのログイン方法を切り替えた話](https://zenn.dev/coconala/articles/c89a8130ce4f40)
 
+#### 成果・実績
+
+- リバースプロキシのミドルウェア更新にあわせ、インスタンスのタイプを見直すことにより、パフォーマンスと可用性を向上
+- 新規事業のインフラ構築では、1から設計とTerraformによる実装および構築を実施
+- RDSやRedisのミドルウェアアップデートを行うため、スケジュール作成・影響調査・検証・テスト作成・本番作業までを実施
+
 #### 開発環境
 
-- **OS:** Ubuntu 18.04, Amazon Linux 2
+- **OS:** Ubuntu, Amazon Linux 2
 - **AWS:** EC2, ECS, CloudFront, ElastiCache for Redis, Aurora MySQL, S3, IAM Identity Center
-- **プロビジョニング:** Terraform, Docker, Ansible, Capistrano, CircleCI
+- **プロビジョニング:** Terraform, Docker, Ansible, Capistrano, CircleCI, Github Actions
 - **ミドルウェア:** Nginx, Fluentd
 - **SaaS:** Akamai CDN, Elastic Cloud
 - **言語:** Python3, シェルスクリプト, Ruby, PHP
@@ -183,21 +187,17 @@ SES事業会社所属のインフラエンジニアとして客先に常駐し�
 
 ## 資格情報
 
-- PingCAP Certified TiDB Practitioner
-  - 取得日: 2024/09/04
-- PingCAP Certified TiDB Associate [TiDB v6.x]
-  - 取得日: 2024/08/30
+- PingCAP Certified TiDB Practitioner（2024/09）
+- PingCAP Certified TiDB Associate [TiDB v6.x]（2024/08）
 
-## 意欲・興味・志向
+## 自己PR
 
-- 過去に経験の無い領域であっても積極的に学習を行い、成果にコミットできるように努めます
-- 技術的に困難にあたっても、解決にむけて地道に取り組みます
-- ナレッジについては可能な限りドキュメントに残すように努めています
-- 必要に応じてシステムのコードを読むことに抵抗はありません
-- インフラの管理・運用がコード化されていることを望みます
-- グローバルなサービスのシステムに興味があります
+### 上流からの経験と当事者意識
 
-## 希望条件
+私はインフラエンジニアとして、要件定義から実装までの業務を自走して行うことが可能です。
+実装のフェーズにおいては必要に応じ社内・社外問わずコミュニケーションを取ることで問題解決や新規機能のリリースを行なってきました。
 
-- 自社でサービスを運営している企業であることを希望しています
-- 通勤時間の乗車率が高いこともあり、出社が必要な場合はフレックスが可能であることを希望します
+### 技術トレンドのキャッチアップ
+
+不定期ではありますが外部勉強会の参加をすることで、技術のキャッチアップする機会を設けるように指定ます。
+また、SNS等で気になる記事を見かけた際はなるべく目を通すようにすることで、知見を増やすことを意識しています。
