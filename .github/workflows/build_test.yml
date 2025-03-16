@@ -25,13 +25,7 @@ jobs:
             README.md
 
       - name: install pandoc
-        run: > 
-          sudo apt-get install -y
-            pandoc
-            texlive-luatex
-            texlive-lang-japanese
-            texlive-latex-extra
-            texlive-fonts-recommended 
+        run: sudo apt-get install -y pandoc texlive-luatex texlive-lang-japanese texlive-latex-extra texlive-fonts-recommended 
                   
       - name: convert markdown to pdf
         run: >
