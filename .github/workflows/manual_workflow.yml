@@ -1,0 +1,31 @@
+name: Manually Executed Workflow
+
+on: [ workflow_dispatch ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: git checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+      # Doc: https://github.com/marketplace/actions/markdownlint-cli2-action
+      - name: markdown linter
+        uses: DavidAnson/markdownlint-cli2-action@05f32210e84442804257b2a6f20b273450ec8265 # v0.17.2
+        with:
+          fix: true
+          config: 'config/.markdownlint.json'
+          globs: |
+            README.md
+
+      - name: install pandoc
+        run: sudo apt-get install -y pandoc texlive-luatex texlive-lang-japanese texlive-latex-extra texlive-fonts-recommended 
+                  
+      - name: convert markdown to pdf
+        run: pandoc README.md -o resume.pdf --pdf-engine=lualatex -V documentclass=ltjsarticle -V luatexjapresetoptions=morisawa -V indent=true
+
+      - name: upload artifacts
+        uses: actions/upload-artifact@4cec3d8aa04e39d1a68397de0c4cd6fb9dce8ec1 # v4.6.1
+        with:
+          name: my-resume
+          path: resume.pdf
