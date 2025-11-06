@@ -1,0 +1,20 @@
+from: markdown+footnotes+autolink_bare_uris
+to: pdf
+standalone: true
+pdf-engine: lualatex
+output-file: resume.pdf
+variables:
+  documentclass: ltjsarticle
+  luatexjapresetoptions: haranoaji
+  indent: true
+  fontsize: 11pt
+  geometry: top=18mm,bottom=18mm,left=18mm,right=18mm
+  mainfont: HaranoAjiMincho
+  sansfont: HaranoAjiGothic
+  monofont: Inconsolata
+  colorlinks: true
+  linkcolor: MidnightBlue
+number-sections: false
+highlight-style: pygments
+include-in-header:
+  - config/pandoc/preamble.tex
