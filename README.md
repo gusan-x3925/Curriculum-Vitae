@@ -34,6 +34,7 @@
 - 社内ナレッジ共有（社内LT登壇、自社ブログ執筆）
   - [ココナラのCDN構成についてご紹介](https://zenn.dev/coconala/articles/905b968520744e)
   - [AWSのログイン方法を切り替えた話](https://zenn.dev/coconala/articles/c89a8130ce4f40)
+  - [TiDB導入を検討したが見送った話](https://zenn.dev/coconala/articles/0fd8688082bea5)
 
 #### 成果・実績
 
