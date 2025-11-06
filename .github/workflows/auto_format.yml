@@ -1,0 +1,33 @@
+name: Auto Format Markdown
+
+on:
+  push:
+    branches-ignore:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  format:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: git checkout
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+
+      - name: markdown linter
+        uses: DavidAnson/markdownlint-cli2-action@992badcdf24e3b8eb7e87ff9287fe931bcb00c6e # v0.17.2
+        with:
+          fix: true
+          config: 'config/.markdownlint.json'
+          globs: |
+            README.md
+
+      - name: commit markdownlint fixes
+        uses: stefanzweifel/git-auto-commit-action@b863ae1933cb653a53c021fe36dbb774e1fb9403 # v5
+        with:
+          commit_message: "chore: apply markdownlint fixes [skip ci]"
+          commit_user_name: GitHub Actions
+          commit_user_email: actions@github.com
+          file_pattern: README.md

@@ -18,11 +18,11 @@ jobs:
           globs: |
             README.md
 
-      - name: install pandoc
-        run: sudo apt-get install -y pandoc texlive-luatex texlive-lang-japanese texlive-latex-extra texlive-fonts-recommended 
-                  
+      - name: install pdf toolchain
+        run: bash scripts/install-pdf-deps.sh
+
       - name: convert markdown to pdf
-        run: pandoc README.md -o resume.pdf --pdf-engine=lualatex -V documentclass=ltjsarticle -V luatexjapresetoptions=morisawa -V indent=true
+        run: pandoc README.md --defaults=config/pandoc/pdf.yml
 
       - name: upload artifacts
         uses: actions/upload-artifact@330a01c490aca151604b8cf639adc76d48f6c5d4 # v5.0.0
